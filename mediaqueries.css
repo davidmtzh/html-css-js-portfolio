@@ -25,4 +25,22 @@
     padding: 0 1rem; /* optional: add horizontal spacing on small screens */
   }
   
+  @media screen and (max-width: 1110px) {
+    .section-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .section__pic-container {
+      width: 200px;
+      height: 200px;
+      
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
   
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }

@@ -10,7 +10,7 @@ function toggleMenu(){
     const robotImg = document.getElementById('project-img');
     if (robotImg) {
       robotImg.addEventListener('mouseenter', () => {
-        robotImg.src = "./assets/robo.gif";
+        robotImg.src = "./assets/robo.gif" ; // cache-busting 
       });
   
       robotImg.addEventListener('mouseleave', () => {
@@ -18,4 +18,7 @@ function toggleMenu(){
       });
     }
   
-    
+    let gifVersion = 0;
+img.addEventListener('mouseenter', () => {
+  img.src = 'robo.gif?v=' + (++gifVersion);
+});

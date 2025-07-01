@@ -512,3 +512,11 @@ article.icon {
   width: 25rem;
   height: 25rem;
 }
+
+.details-container color-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 2.5rem; /* space between items */
+  justify-items: left;
+  justify-items: stretch; /* makes children stretch to fill */
+}

@@ -14,7 +14,7 @@ function toggleMenu(){
       });
   
       robotImg.addEventListener('mouseleave', () => {
-        robotImg.src = "./assets/project1.png";
+        robotImg.src = "./assets/project2.png";
       });
     }
   

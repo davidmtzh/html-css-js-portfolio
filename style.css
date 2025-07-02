@@ -178,6 +178,8 @@ section {
   align-items: flex-start; /* Align tops */
   gap: 1rem;               /* Spacing between image and text */
   flex-wrap: wrap;         /* Allow stacking on small screens */
+  justify-content: center;
+  max-width: 200rem;
   
 }
 
@@ -299,6 +301,8 @@ section {
   /*  ABOUT SECTION  */
 
   #about {
+    
+    justify-content: center;
     position: relative;
     margin-top: 5rem;
   }
@@ -311,6 +315,7 @@ section {
   
 
   .about-containers {
+    
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 0rem;
@@ -348,6 +353,7 @@ section {
   }
 
   .details-container {
+    
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -357,7 +363,36 @@ section {
     text-align: center;
   }
 
+  /*  ** COLOR CONTAINERS ** */
+  .details-container.green:hover {
+    border-color: #000000; /* bright green */
+    box-shadow: 0 0 8px #00c85366; /* subtle glow */
+  }
 
+  .details-container.red:hover {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border-color: #140101;
+    box-shadow: 0 0 8px #c41d1df3;
+    text-align: center
+  }
+
+  .details-container.blue:hover {
+    border-color: #051e61;
+    box-shadow: 0 0 8px #1c4ac794;
+  }
+
+  .details-container.yellow:hover {
+    border-color: #473104;
+    box-shadow: 0 0 8px #9e6a0166;
+  }
+
+  .details-container.purple:hover {
+    border-color: #36054e;
+    box-shadow: 0 0 8px #7101a866;
+  }
 
   /* PROFILE SECTION */
 
@@ -366,6 +401,7 @@ section {
     justify-content: center;
     gap: 3rem;
     height: 45vh;
+    margin-bottom: 15rem;
   }
 
   .section__pic-container {
@@ -407,7 +443,8 @@ section {
 
 #experience {
   position: relative;
-  
+  margin-bottom: 45rem;
+  margin-top: 7rem;
 }
 
 #experience .arrow{
@@ -473,24 +510,40 @@ article.icon {
 /*  PROJECTS  */
 
 #projects {
-  position: relative;
-  margin-top: 40rem;
+
+  position: relative ;
+  margin-top: 20rem;
+  justify-content: center;
+  
+}
+
+.overlay {
+  justify-content: center;
+  text-align: center;
+  width: 100rem;
 }
 
 #projects .article-container {
+  
+  justify-content: center;
   color: black;
-  max-width: 25rem;
+  max-width: 10rem;
   border-radius: 2rem; 
   overflow: hidden;
   
 }
 
 .project-img {
-  display: block;
+  
+  display: flex;
+  flex: 2;
   border-radius: 2rem; 
-  width: 25rem;
-  height: 25rem;
+  width: 600px;
+  height: 200px;
   transition: opacity 0.7s ease-in-out;
+  justify-content: center;
+ 
+  
 }
 
 .article-container:hover .overlay {
@@ -498,8 +551,8 @@ article.icon {
   top: 10;
   left: 1;
   border-radius: 2rem; 
-  width: 25rem;
-  height: 25rem;
+  width: 600px;
+  height: 200px;
   background: linear-gradient(rgba(0, 0, 0, 0.796), rgba(0, 0, 0, 0.27));
   pointer-events: none; /* Allows clicks to pass through */
 }
@@ -509,14 +562,34 @@ article.icon {
   top: 10;
   left: 1;
   border-radius: 2rem; 
-  width: 25rem;
-  height: 25rem;
+  width: 10rem;
+  height: 12.5rem;
 }
 
-.details-container color-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 2.5rem; /* space between items */
-  justify-items: left;
-  justify-items: stretch; /* makes children stretch to fill */
+.projects-details-container {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  gap: 2rem; /* space between items */
+  justify-items: center; /* makes children stretch to fill */
+  
 }
+
+
+
+  #projects .details-container.color-container{
+    align-content: center;
+    
+    text-align: middle;
+    max-width: 20rem;
+    
+
+  }
+
+  .projects-card {
+    display: flex;
+    flex: 1;
+    font-size: 1.75rem;
+    gap: 4rem;
+    
+  }

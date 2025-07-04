@@ -166,7 +166,6 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -304,7 +303,8 @@ section {
     
     justify-content: center;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
   }
 
   .title {
@@ -366,7 +366,7 @@ section {
   /*  ** COLOR CONTAINERS ** */
   .details-container.green:hover {
     border-color: #000000; /* bright green */
-    box-shadow: 0 0 8px #00c85366; /* subtle glow */
+    box-shadow: 0 0 8px #0ce25ec4; /* subtle glow */
   }
 
   .details-container.red:hover {
@@ -375,23 +375,23 @@ section {
     background: white;
     border-radius: 2rem;
     border-color: #140101;
-    box-shadow: 0 0 8px #c41d1df3;
+    box-shadow: 0 0 8px #e40f0ff5;
     text-align: center
   }
 
   .details-container.blue:hover {
     border-color: #051e61;
-    box-shadow: 0 0 8px #1c4ac794;
+    box-shadow: 0 0 8px #0f47e2d3;
   }
 
   .details-container.yellow:hover {
     border-color: #473104;
-    box-shadow: 0 0 8px #9e6a0166;
+    box-shadow: 0 0 8px #f3e307;
   }
 
   .details-container.purple:hover {
     border-color: #36054e;
-    box-shadow: 0 0 8px #7101a866;
+    box-shadow: 0 0 8px #a008ecb9;
   }
 
   /* PROFILE SECTION */
@@ -400,7 +400,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    height: 45vh;
+    margin-top: 4rem;
     margin-bottom: 15rem;
   }
 
@@ -443,8 +443,9 @@ section {
 
 #experience {
   position: relative;
-  margin-bottom: 45rem;
-  margin-top: 7rem;
+  
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 #experience .arrow{
@@ -510,11 +511,10 @@ article.icon {
 /*  PROJECTS  */
 
 #projects {
-
   position: relative ;
-  margin-top: 20rem;
-  justify-content: center;
-  
+  padding-bottom: 4rem;
+  padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 .overlay {
@@ -569,7 +569,7 @@ article.icon {
 .projects-details-container {
   flex: 1;
   justify-content: center;
-  display: flex;
+  
   gap: 2rem; /* space between items */
   justify-items: center; /* makes children stretch to fill */
   

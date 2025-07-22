@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     #desktop-nav{
         display: none; 
     }
@@ -91,6 +91,7 @@
     .about-containers {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
   
     .project-img {
@@ -100,6 +101,7 @@
   
     #projects .article-container {
       max-width: 100%;
+      text-align: center;
     }
   
     .hamburger-icon {
